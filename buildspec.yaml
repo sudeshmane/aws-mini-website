@@ -3,7 +3,11 @@ version: 0.2
 phases:
   build:
     commands:
-      - echo "Building project"
+      - echo "Building project"      
+      - echo "Listing current directory contents"
+      - ls -la
+      - echo "Listing source-directory contents"
+      - ls -la source-directory
       - mkdir -p output
       - if [ -d "source-directory" ]; then cp -r source-directory/* output/; else echo "Source directory not found"; fi
 
