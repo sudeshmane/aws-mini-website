@@ -5,7 +5,7 @@ phases:
     commands:
       - echo "Building project"
       - mkdir -p output
-      - cp -r * output/
+      - if [ -d "source-directory" ]; then cp -r source-directory/* output/; else echo "Source directory not found"; fi
 
 artifacts:
   files:
