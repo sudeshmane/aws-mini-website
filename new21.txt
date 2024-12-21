@@ -1,0 +1,6 @@
+{
+  "Resources": {
+    "random.name": "sudesh55",
+    "server2": "abcd99"
+  }
+}
